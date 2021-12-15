@@ -25,3 +25,8 @@ common src-deps
 executable Day01
   import:          src-deps
   main-is:         Day01.hs
+
+executable Day02
+  import:          src-deps
+  main-is:         Day02.hs
+  build-depends:   split >= 0.2 && < 0.3
