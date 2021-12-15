@@ -30,3 +30,7 @@ executable Day02
   import:          src-deps
   main-is:         Day02.hs
   build-depends:   split >= 0.2 && < 0.3
+
+executable Day03
+  import:          src-deps
+  main-is:         Day03.hs

@@ -26,3 +26,7 @@ optionsParser dayDesc =
 getInput :: String -> IO String
 getInput "-" = getContents
 getInput file = readFile file
+
+toInt base digits = snd $ foldr toDecimal (1, 0) digits
+  where
+    toDecimal digit (place, accum) = (place * base, accum + digit * place)
